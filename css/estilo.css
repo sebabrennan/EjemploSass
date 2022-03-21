@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #bdffbd;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav .menu {
+  background-color: #00aa00;
+  list-style-type: none;
+  padding: 0;
+  width: 90%;
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+header nav .menu li {
+  padding: 0.7rem;
+  margin: 0.7rem;
+}
+
+header nav .menu li a {
+  color: #bdffbd;
+  text-decoration: none;
+  padding: 20px;
+}
+
+header nav .menu li a:hover {
+  background-color: #004e00;
+  color: #bdffbd;
+}
+
+main {
+  margin: 1rem;
+}
+
+main .empresa {
+  padding: 1rem;
+  margin: 1rem;
+  color: #004e00;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  grid-template-areas:
+    "titulo titulo"
+    "texto imagnen";
+}
+
+main .empresa .titulo {
+  text-decoration: underline;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: titulo;
+  text-align: center;
+  margin: 2rem;
+}
+
+main .empresa .texto {
+  line-height: 2;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: texto;
+}
+
+main .empresa .imagen {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: imagen;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+}
+/*# sourceMappingURL=estilo.css.map */

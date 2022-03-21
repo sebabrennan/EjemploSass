@@ -1,0 +1,28 @@
+header {
+  nav {
+    .menu {
+      background-color: $bg-verde;
+      list-style-type: none;
+      padding: 0;
+      width: 90%;
+      margin: 20px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      li {
+        padding: 0.7rem;
+        margin: 0.7rem;
+        a {
+          color: $bg-claro;
+          text-decoration: none;
+          padding: 20px;
+          &:hover {
+            background-color: $bg-oscuro;
+            color: $bg-claro;
+          }
+        }
+      }
+    }
+  }
+}

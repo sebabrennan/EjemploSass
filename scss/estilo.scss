@@ -1,0 +1,39 @@
+@import "variables";
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: $bg-claro;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@import "header";
+main {
+  margin: 1rem;
+  .empresa {
+    padding: 1rem;
+    margin: 1rem;
+    color: $bg-oscuro;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+      "titulo titulo"
+      "texto imagnen";
+    .titulo {
+      text-decoration: underline;
+      grid-area: titulo;
+      text-align: center;
+      margin: 2rem;
+    }
+    .texto {
+      line-height: 2;
+      grid-area: texto;
+    }
+    .imagen {
+      grid-area: imagen;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+}
